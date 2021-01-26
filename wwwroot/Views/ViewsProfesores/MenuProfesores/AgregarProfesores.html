@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgregarProfesoresform</title>
+    <!-- <script src="/wwwroot/css/style.css"></script> -->
+    <style>
+            body{
+                background-color: cornflowerblue;
+            }
+            h1{
+                text-align: center;
+                font-style: initial;
+            }
+            form{
+                text-align: center;
+                background-color: rgb(17, 35, 107);
+                color: blanchedalmond;
+                font-size: 16px;
+                font-family: inherit;
+                margin: 10px;
+                padding: 10px;
+            }
+            div{
+                padding: 5px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Agregar profesores:</h1>
+    <form>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <div>
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        </div>
+
+        <div>
+            <label for="direccion">Direccion:</label>
+            <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div>
+            <label for="materia">Materia:</label>
+            <input type="text" id="materia" name="materia" required>
+        </div>
+
+        <div>
+            <label for="estadoCivil">Estado Civil:</label>
+            <select name="estadoCivil" id="estadoCivil">
+                <option value="soltero/a">Soltero/a</option>
+                <option value="casado/a">Casado/a</option>
+                <option value="divorciado/a">Divorciado/a</option>
+            </select>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Agregar">
+        </div>
+    </form>
+    <a href="../Profesores.html">Volver</a>
+</body>
+</html>
