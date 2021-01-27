@@ -1,19 +1,43 @@
 body{
-    background-color: cornflowerblue;
+    background-color:#2EC19D;
 }
 h1{
+    color:white;
+    font-family:sans-serif;
     text-align: center;
-    font-style: initial;
+    padding: 20px;
+}  
+h2{
+    background-color:bisque;
+    color:darkslategray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 5px;
+    
+}  
+li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
 }
-form{
+.Agregar{
+    background-color: teal;
+}
+#menuPrincipal li{
     text-align: center;
-    background-color: rgb(17, 35, 107);
-    color: blanchedalmond;
-    font-size: 16px;
-    font-family: inherit;
-    margin: 10px;
-    padding: 10px;
+    padding:0;
+    /* con display podemos colocar el menu de forma horizontal */
+    display: inline;
 }
-div{
-    padding: 5px;
-}     
+#menuPrincipal li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    float: left;
+    padding: 20px;
+    background-color: #0c4244;
+    color: #fff;
+    }
+#menuPrincipal li a:hover {
+        background-color: #78f5cf;
+        margin-top: -2;
+        padding-bottom: 12px;
+        }
