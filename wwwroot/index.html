@@ -10,12 +10,28 @@
 <body>
     <h1>Comunidad IT</h1>
     <div>
-        <nav id="menuPrincipal">
-            <h2>Menu:</h2>
-            <ul>
-                <li><a href="Views/ViewsAlumnos/Alumnos.html">Alumnos</a></li>
-                <li><a href="Views/ViewsProfesores/Profesores.html">Profesores</a></li>
-                <li><a href="Views/ViewsMaterias/Materias.html">Materias</a></li>
+        <nav class="nav">
+            <h2>Menu principal: </h2>
+            <ul class="menuPrincipal">
+                <li><a href="Views/ViewsAlumnos/Alumnos.html">Alumnos</a>
+                    <ul class="subMenu">
+                        <li><a href="../wwwroot/Views/ViewsAlumnos/MenuAlumnos/AgregarAlumnos.html">Agregar Alumnos</a></li>
+                        <li><a href="../wwwroot/Views/ViewsAlumnos/MenuAlumnos/ListarAlumnos.html">Listar Alumnos</a></li>
+                    </ul>
+                </li>
+                <li><a href="Views/ViewsProfesores/Profesores.html">Profesores</a>
+                    <ul class="subMenu">
+                        <li><a href="../wwwroot/Views/ViewsProfesores/MenuProfesores/AgregarProfesores.html">Agregar Profesores</a></li>
+                        <li><a href="../wwwroot/Views/ViewsProfesores/MenuProfesores/ListarProfesores.html">Listar Profesores</a></li>
+                    </ul>
+                </li>
+                    
+                <li><a href="Views/ViewsMaterias/Materias.html">Materias</a>
+                    <ul class="subMenu">
+                        <li><a href="../wwwroot/Views/ViewsMaterias/MenuMaterias/AgregarMaterias.html">Agregar materia</a></li>
+                        <li><a href="../wwwroot/Views/ViewsMaterias/MenuMaterias/ListarMaterias.html">Listar materias</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 

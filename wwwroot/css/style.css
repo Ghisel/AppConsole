@@ -18,26 +18,54 @@ li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:20px;
 }
-.Agregar{
-    background-color: teal;
+.nav{
+    width: 1000px;
+    margin: 30px auto;
+    background-color: #054434;
 }
-#menuPrincipal li{
-    text-align: center;
-    padding:0;
-    /* con display podemos colocar el menu de forma horizontal */
-    display: inline;
+
+.nav ul{
+    list-style:none;
 }
-#menuPrincipal li a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+
+.menuPrincipal > li{
+    position:relative;
+    display:inline-block;
+}
+.menuPrincipal > li > a{
+    display:block;
+    padding:15px 20px;
+    color:aliceblue;
+    font-family:sans-serif;
     text-decoration: none;
-    float: left;
-    padding: 20px;
-    background-color: #0c4244;
-    color: #fff;
-    }
-#menuPrincipal li a:hover {
-        background-color: #78f5cf;
-        margin-top: -2;
-        padding-bottom: 12px;
-        }
+}
+.menuPrincipal li a:hover{
+    color:rgb(7, 85, 75);
+    background-color: cyan;
+}
+/* submenu */
+.subMenu{
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.subMenu li a{
+    display: block;
+    padding: 15px;
+    color:rgb(5, 32, 32);
+    background-color: lightcyan;
+}
+.menuPrincipal li:hover .subMenu{
+    display: block;
+
+}
+.volver{
+    color:cornsilk;
+    font-family: initial;
+    padding:10px;
+}
+.volver:hover{
+    color:black;
+    background-color: rgb(207, 234, 235);
+    text-decoration: none;
+}
